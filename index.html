@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Criptografia de Textos</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="/img/Vector.ico" alt="logo da alura" />
+      <h1>Criptografia de<span>Textos</span> </h1>
+    </header>
+
+    <main class="main">
+      <section>
+        <textarea
+          class="input-texto"
+          cols="38"
+          rows="7"
+          placeholder="Digite seu texto..."
+        ></textarea>
+
+        <div class="informacao">
+          <img src="/img/exclamation.svg" alt="">
+          <h6>Apenas letras minusculas e sem acento.</h6>
+        </div>
+
+        <div class="botoes">
+          <button class="encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+
+          <button class="desencriptar" onclick="btnDesencriptar()"> 
+            Descriptografar
+          </button>
+          <button class="copy" onclick="botaoCopiar()">Copiar</button>
+          
+        </div>
+      </section>
+      
+      <section>
+        <textarea class="mensagem" cols="20" rows="10" placeholder="Nenhuma mensagem encontrada.&#10;&#10;Digite um texto para Criptografar e Descriptografar." readonly></textarea>
+      </section>
+      <footer>
+        <a href="#"> 
+         <img src="/img/instagram.png" alt="logo do instagram">
+        </a>
+        <a href="#">  
+         <img src="/img/twitter.png" alt="logo do twitter">
+        </a>
+        <a href="#">  
+         <img src="/img/github.png" alt="logo do github">
+        </a> 
+       <p>Desenvolvido por: </br> <span>Ray S. Silva</span></p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
